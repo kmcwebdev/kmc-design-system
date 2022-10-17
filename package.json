@@ -1,7 +1,7 @@
 {
   "name": "kmc-design-system",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -39,5 +39,9 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joelcabagua/react-vite-starter.git"
   }
 }
