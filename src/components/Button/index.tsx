@@ -21,7 +21,7 @@ export interface ButtonProps
   size?: 'sm' | 'base';
 }
 
-const Button: React.FC<ButtonProps> = ({ children, variant = 'filled-primary', size = 'base', ...rest }) => {
+export const Button: React.FC<ButtonProps> = ({ children, variant = 'filled-primary', size = 'base', ...rest }) => {
   return (
     <button
       {...rest}
@@ -62,5 +62,3 @@ const variantToClassName: Record<ButtonVariant, string> = {
   'outlined-info':
     'border border-interactive-info-neutral text-interactive-info-neutral hover:text-interactive-info-hovered active:text-interactive-info-pressed hover:bg-surface-info-hovered',
 };
-
-export default Button;
