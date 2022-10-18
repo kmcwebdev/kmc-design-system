@@ -1,7 +1,7 @@
 /* eslint-disable import/named */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Button from './Button';
+import Button from '.';
 
 export default {
   title: 'Core/Button/Filled',
