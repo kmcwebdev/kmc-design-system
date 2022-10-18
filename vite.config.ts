@@ -5,11 +5,18 @@ import dts from 'vite-plugin-dts';
 import * as packageJson from './package.json';
 import { resolve } from 'node:path';
 
+import EsLint from 'vite-plugin-linter';
+const { EsLinter, linterPlugin } = EsLint;
+
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig((configEnv) => ({
   plugins: [
     react(),
     tsConfigPaths(),
+    linterPlugin({
+      include: ['./src}/**/*.{ts,tsx}'],
+      linters: [new EsLinter({ configEnv })],
+    }),
     dts({
       include: ['src/components/'],
     }),
@@ -25,4 +32,4 @@ export default defineConfig({
       external: [...Object.keys(packageJson.peerDependencies)],
     },
   },
-});
+}));
