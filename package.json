@@ -10,8 +10,7 @@
     ".": {
       "import": "./dist/kmc-design-system.es.js",
       "require": "./dist/kmc-design-system.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
+    }
   },
   "main": "./dist/kmc-design-system.umd.js",
   "module": "./dist/kmc-design-system.es.js",
