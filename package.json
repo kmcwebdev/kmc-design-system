@@ -11,7 +11,8 @@
       "import": "./dist/kmc-design-system.es.js",
       "require": "./dist/kmc-design-system.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./dist/components": "./dist/components"
   },
   "main": "./dist/kmc-design-system.umd.js",
   "module": "./dist/kmc-design-system.es.js",
