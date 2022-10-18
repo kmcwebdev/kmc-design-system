@@ -19,7 +19,7 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "kmc-design-system": ["src/components/index.ts"]
+      "kmc-design-system": ["src/component/utils/index.tss"]
     },
     "typeRoots": ["node_modules/@types", "src/components/index.d.ts"]
   },

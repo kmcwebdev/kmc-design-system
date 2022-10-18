@@ -11,12 +11,11 @@
       "import": "./dist/kmc-design-system.es.js",
       "require": "./dist/kmc-design-system.umd.js"
     },
-    "./dist/style.css": "./dist/style.css",
-    "./dist/components": "./dist/components"
+    "./dist/style.css": "./dist/style.css"
   },
   "main": "./dist/kmc-design-system.umd.js",
   "module": "./dist/kmc-design-system.es.js",
-  "types": "./dist/components/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -75,9 +74,9 @@
     "tailwindcss": "^3.1.8",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
-    "vite-plugin-dts": "^1.6.6",
+    "vite-plugin-dts": "1.4.1",
     "vite-plugin-linter": "^1.2.0",
-    "vite-tsconfig-paths": "^3.5.1"
+    "vite-tsconfig-paths": "3.5.0"
   },
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",

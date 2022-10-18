@@ -1,12 +1,11 @@
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tsConfigPaths from 'vite-tsconfig-paths';
-import dts from 'vite-plugin-dts';
-import * as packageJson from './package.json';
 import { resolve } from 'node:path';
-
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 import EsLint from 'vite-plugin-linter';
+import tsConfigPaths from 'vite-tsconfig-paths';
 const { EsLinter, linterPlugin } = EsLint;
+import * as packageJson from './package.json';
 
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
@@ -18,12 +17,12 @@ export default defineConfig((configEnv) => ({
       linters: [new EsLinter({ configEnv })],
     }),
     dts({
-      include: ['src/components/'],
+      include: ['src/component/'],
     }),
   ],
   build: {
     lib: {
-      entry: resolve('src', 'components/index.ts'),
+      entry: resolve('src', 'component/index.ts'),
       name: 'KMCDesignSystem',
       formats: ['es', 'umd'],
       fileName: (format) => `kmc-design-system.${format}.js`,
