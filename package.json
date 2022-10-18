@@ -2,11 +2,19 @@
   "name": "kmc-design-system",
   "version": "0.0.0-development",
   "type": "module",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "./dist/react-vite-library.umd.js",
+  "module": "./dist/react-vite-library.es.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/react-vite-library.es.js",
+      "require": "./dist/react-vite-library.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
