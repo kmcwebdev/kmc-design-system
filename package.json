@@ -77,10 +77,6 @@
       "path": "@commitlint/cz-commitlint"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kmcwebdev/kmc-design-system"
-  },
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -88,5 +84,9 @@
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmcwebdev/kmc-design-system.git"
+  }
 }
