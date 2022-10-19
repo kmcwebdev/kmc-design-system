@@ -19,9 +19,9 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "kmc-design-system": ["src/component/utils/index.tss"]
+      "@kmc-design-system": ["src/component/*"]
     },
-    "typeRoots": ["node_modules/@types", "src/components/index.d.ts"]
+    "typeRoots": ["node_modules/@types", "src/component/index.d.ts"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -6,6 +6,7 @@ import EsLint from 'vite-plugin-linter';
 import tsConfigPaths from 'vite-tsconfig-paths';
 const { EsLinter, linterPlugin } = EsLint;
 import * as packageJson from './package.json';
+import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
@@ -30,5 +31,13 @@ export default defineConfig((configEnv) => ({
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
     },
+  },
+  resolve: {
+    alias: [
+      {
+        find: '@kmc-design-system',
+        replacement: path.resolve(__dirname, './src/component'),
+      },
+    ],
   },
 }));
