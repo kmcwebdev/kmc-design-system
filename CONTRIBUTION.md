@@ -4,6 +4,18 @@ When contributing to this repository please follow these rules and guidelines.
 
 Please follow it in all your interactions with the project.
 
+## Setting up VS Code
+
+We enforce code format consistency using prettier please copy this to your vscode `settings.json` before interacting with the project.
+
+```json
+{
+  "prettier.configPath": ".prettierrc.cjs",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
+
 ## Creating a Branch Process
 
 1. Before creating your branch for any changes to be made `checkout` to source branch and pull the latest from the remote repository.
