@@ -6,7 +6,7 @@
 </a>
 </div>
 <br />
-<div align="center"><strong>KMC Solutions resusable components.</strong></div>
+<div align="center"><strong>KMC Design System</strong></div>
 <br />
 <div align="center">
 <a href="https://kmc.solutions/">Website</a> 
