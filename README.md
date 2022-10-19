@@ -39,11 +39,11 @@
 #### With yarn
 
 ```sh
-yarn add react-hot-toast
+yarn add kmc-design-system
 ```
 
 #### With NPM
 
 ```sh
-npm install react-hot-toast
+npm install kmc-design-system
 ```
