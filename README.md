@@ -16,7 +16,7 @@
 
 <br />
 <div align="center">
-  <sub>Cooked by <a href="https://github.com/kmcwebdev">KMC Solutions Dev Team</a> 👨‍🍳</sub>
+  <sub>Designed and Created by <a href="https://github.com/kmcwebdev">KMC Solutions Dev Team</a></sub>
 </div>
 
 <br />
