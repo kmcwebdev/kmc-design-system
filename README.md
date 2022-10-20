@@ -154,7 +154,7 @@ Install `tailwindcss` and `@tailwindcss/forms` plugin befure using this package 
 
 <br/>
 
-##### **Thanks to These Guys!**
+##### **Thanks to These Guys Contribution!**
 
 <div align="center">
 <a href="https://github.com/kmcwebdev/kmc-design-system/graphs/contributors">
