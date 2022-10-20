@@ -35,8 +35,8 @@ export default defineConfig((configEnv) => ({
   resolve: {
     alias: [
       {
-        find: '@kmc-design-system',
-        replacement: path.resolve(__dirname, './src/component'),
+        find: '#rtkstore',
+        replacement: path.resolve(__dirname, './src/app/store'),
       },
     ],
   },
