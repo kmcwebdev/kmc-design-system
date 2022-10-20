@@ -4,7 +4,18 @@ When contributing to this repository please follow these rules and guidelines.
 
 Please follow it in all your interactions with the project.
 
-## Setting up VS Code
+## Setting up Environment
+
+Install dependencies and adding husky hooks.
+
+> Delete first the `.husky folder`
+
+```zsh
+yarn install
+yarn husky install
+npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1 --verbose"
+npx husky add .husky/pre-commit "npx lint-staged"
+```
 
 We enforce code format consistency using prettier please copy this to your vscode `settings.json` before interacting with the project.
 
