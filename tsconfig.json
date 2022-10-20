@@ -17,11 +17,10 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "declarationMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "@kmc-design-system": ["src/component/*"]
-    },
-    "typeRoots": ["node_modules/@types", "src/component/index.d.ts"]
+    "baseUrl": "."
+  },
+  "paths": {
+    "kmc-design-system": ["src/component/*"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
