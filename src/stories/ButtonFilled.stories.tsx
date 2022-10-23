@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '../component';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { actions } from '@storybook/addon-actions';
 
 export default {
   title: 'Core/Button/Filled',
@@ -9,7 +10,9 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const buttonEvents = actions({ onClick: 'Button Clicked' });
+
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} {...buttonEvents} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

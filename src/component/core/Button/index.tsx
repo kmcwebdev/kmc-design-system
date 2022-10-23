@@ -25,6 +25,7 @@ export const Button: React.FC<ButtonProps> = ({ children, variant = 'filled-prim
   return (
     <button
       {...rest}
+      data-testid="button"
       className={classNames(
         'rounded outline-none shadow-sm-3 hover:shadow-sm-4 focus:shadow-sm-4 active:shadow-sm-1 transition-all duration-150 font-bold whitespace-nowrap px-6 self-end',
         variantToClassName[variant],

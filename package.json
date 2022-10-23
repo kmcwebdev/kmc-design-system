@@ -23,7 +23,9 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -48,12 +50,16 @@
     "@storybook/builder-vite": "^0.2.4",
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
+    "@storybook/testing-react": "^1.3.0",
     "@tailwindcss/forms": "^0.5.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "@vitejs/plugin-react": "^2.1.0",
+    "@vitest/ui": "^0.24.3",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "commitizen": "^4.2.5",
@@ -66,7 +72,10 @@
     "eslint-plugin-storybook": "^0.6.6",
     "husky": "^8.0.1",
     "inquirer": "8",
+    "jsdom": "^20.0.1",
     "lint-staged": "^13.0.3",
+    "msw": "^0.47.4",
+    "msw-storybook-addon": "^1.6.3",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.5",
@@ -75,7 +84,8 @@
     "vite": "^3.1.0",
     "vite-plugin-dts": "1.4.1",
     "vite-plugin-linter": "^1.2.0",
-    "vite-tsconfig-paths": "^3.5.1"
+    "vite-tsconfig-paths": "^3.5.1",
+    "vitest": "^0.24.3"
   },
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",
