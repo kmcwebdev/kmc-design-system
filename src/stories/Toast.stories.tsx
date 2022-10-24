@@ -19,7 +19,7 @@ const Template: ComponentStory<typeof Toast> = (args) => {
       <Toaster position="top-center" />
       <Button
         size="sm"
-        variant={`filled-${rest.variant || 'success'}`}
+        variant={`${rest.variant || 'success'}`}
         onClick={() => {
           showToast(rest);
         }}
