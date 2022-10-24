@@ -7,7 +7,21 @@ import { actions } from '@storybook/addon-actions';
 export default {
   title: 'Core/Button/Filled',
   component: Button,
-  argTypes: {},
+  argTypes: {
+    disabled: {
+      type: 'boolean',
+      defaultValue: false,
+    },
+    outlined: {
+      type: 'boolean',
+      defaultValue: false,
+    },
+  },
+  parameters: {
+    vitest: {
+      testFile: 'Button.test.tsx',
+    },
+  },
 } as ComponentMeta<typeof Button>;
 
 const buttonEvents = actions({ onClick: 'Button Clicked' });
@@ -17,35 +31,35 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} {...
 export const Primary = Template.bind({});
 Primary.args = {
   children: 'PRIMARY FILLED',
-  variant: 'filled-primary',
+  variant: 'primary',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   children: 'SECONDARY FILLED',
-  variant: 'filled-secondary',
+  variant: 'secondary',
 };
 
 export const Success = Template.bind({});
 Success.args = {
   children: 'SUCCESS FILLED',
-  variant: 'filled-success',
+  variant: 'success',
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
   children: 'DANGER FILLED',
-  variant: 'filled-danger',
+  variant: 'danger',
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
   children: 'WARNING FILLED',
-  variant: 'filled-warning',
+  variant: 'warning',
 };
 
 export const Info = Template.bind({});
 Info.args = {
   children: 'INFO FILLED',
-  variant: 'filled-info',
+  variant: 'info',
 };

@@ -1,6 +1,6 @@
 // Button
 export type { ButtonProps, ButtonVariant } from './core/Button';
-export { Button } from './core/Button';
+export { Button, variantToClassName } from './core/Button';
 
 // Alert Dialog
 export { AlertDialog } from './core/AlertDialog';
