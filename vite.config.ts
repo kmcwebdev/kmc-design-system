@@ -1,11 +1,10 @@
 import react from '@vitejs/plugin-react';
 import { resolve } from 'node:path';
-import * as path from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import EsLint from 'vite-plugin-linter';
-// import tsConfigPaths from 'vite-tsconfig-paths';
 import * as packageJson from './package.json';
+// import tsConfigPaths from 'vite-tsconfig-paths';
 const { EsLinter, linterPlugin } = EsLint;
 
 // https://vitejs.dev/config/
@@ -32,12 +31,9 @@ export default defineConfig((configEnv) => ({
       external: [...Object.keys(packageJson.peerDependencies)],
     },
   },
-  resolve: {
-    alias: [
-      {
-        find: '#rtkstore',
-        replacement: path.resolve(__dirname, './src/app/store'),
-      },
-    ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts'],
   },
 }));
