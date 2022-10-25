@@ -32,12 +32,9 @@ export default defineConfig((configEnv) => ({
       external: [...Object.keys(packageJson.peerDependencies)],
     },
   },
-  resolve: {
-    alias: [
-      {
-        find: '#rtkstore',
-        replacement: path.resolve(__dirname, './src/app/store'),
-      },
-    ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts'],
   },
 }));

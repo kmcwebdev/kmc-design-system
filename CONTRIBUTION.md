@@ -44,6 +44,20 @@ We enforce code format consistency using prettier please copy this to your vscod
 1. Ensure that changes are fully tested and ready for production release before creating a Pull Request to `master` branch.
 2. Open a pull request and wait for approvers to approve your Pull Request
 
+> Include these on your PR requests
+
+```bash
+This pull request contains:
+
+- [x] New Feature
+- [x] Component Updates
+- [x] Bug Fix
+- [ ] Code Refactor
+- [x] Storybook Updates
+- [ ] Other (about what?)
+
+```
+
 > NOTE: No one should be able to push on `master` branch.
 > All changes in `master` branch needs to be done via Pull Request
 
