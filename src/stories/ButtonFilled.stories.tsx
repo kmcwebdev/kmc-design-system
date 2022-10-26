@@ -1,7 +1,8 @@
 /* eslint-disable import/named */
-import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+
 import { Button } from '../component';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
 import { actions } from '@storybook/addon-actions';
 
 export default {

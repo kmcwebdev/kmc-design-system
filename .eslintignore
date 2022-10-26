@@ -8,3 +8,4 @@ prettierrc.cjs
 commitlint.config.cjs
 postcss.config.cjs
 tailwind.config.cjs
+config-overrides.mjs

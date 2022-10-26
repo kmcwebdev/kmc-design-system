@@ -1,13 +1,16 @@
-import react from '@vitejs/plugin-react';
-import { resolve } from 'node:path';
+import * as packageJson from './package.json';
+
+import EsLint from 'vite-plugin-linter';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
-import EsLint from 'vite-plugin-linter';
-import * as packageJson from './package.json';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'node:path';
+
 const { EsLinter, linterPlugin } = EsLint;
 
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
+  publicDir: false,
   plugins: [
     react(),
     linterPlugin({
