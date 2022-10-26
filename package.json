@@ -91,7 +91,11 @@
   },
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",
-    "react-dom": "16.8.0 || >=17.x"
+    "react-dom": "16.8.0 || >=17.x",
+    "@headlessui/react": ">=1.7.3",
+    "@heroicons/react": ">=2.0.12",
+    "react-hot-toast": ">=2.4.0",
+    "react-select": ">=5.5.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix",
