@@ -11,6 +11,9 @@ const { EsLinter, linterPlugin } = EsLint;
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
   publicDir: false,
+  optimizeDeps: {
+    exclude: ['react', 'react-dom'],
+  },
   plugins: [
     react(),
     linterPlugin({
