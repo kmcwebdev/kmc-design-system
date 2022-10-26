@@ -6,12 +6,6 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/kmc-design-system.es.js",
-      "require": "./dist/kmc-design-system.umd.js"
-    }
-  },
   "main": "./dist/kmc-design-system.umd.js",
   "module": "./dist/kmc-design-system.es.js",
   "types": "./dist/index.d.ts",
