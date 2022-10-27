@@ -41,6 +41,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          token: ${{ secrets.GH_TOKEN }}
+          persist-credentials: false
           cache: 'yarn'
       - run: yarn install
       - run: yarn build
@@ -48,4 +50,5 @@ jobs:
         env:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
           GH_TOKEN: ${{ SECRETS.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
         run: yarn semantic-release
