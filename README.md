@@ -49,7 +49,7 @@ yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-3. Configure the template paths inside the tailwind.config.cjs file and paste this.
+3. Configure the template paths inside the tailwind.config.cjs file and paste this
 
 ```javascript
 module.exports = {
