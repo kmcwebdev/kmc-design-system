@@ -21,7 +21,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "commit": "git-cz",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --branches reset-npm",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "vitest",
