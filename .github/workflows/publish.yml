@@ -45,6 +45,7 @@ jobs:
           cache: 'yarn'
           token: ${{ SECRETS.SEMANTIC_RELEASE_TOKEN }}
           ssh: ${{ SECRETS.SEMANTIC_SSH }}
+          persist-credentials: false
       - name: Install Yarn
         run: yarn install
       - name: Build Project
