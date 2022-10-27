@@ -1,16 +1,4 @@
-export type ButtonVariant =
-  | 'filled-primary'
-  | 'filled-secondary'
-  | 'filled-success'
-  | 'filled-warning'
-  | 'filled-danger'
-  | 'filled-info'
-  | 'outlined-primary'
-  | 'outlined-secondary'
-  | 'outlined-success'
-  | 'outlined-warning'
-  | 'outlined-danger'
-  | 'outlined-info';
+import { ButtonVariant } from '../Button';
 
 export type ActionType = 'primary' | 'success' | 'danger';
 

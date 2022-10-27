@@ -6,7 +6,7 @@ import { actionsVariants, variantToClassName } from './variants';
 
 const SplitButton: React.FC<SplitButtonProps> = ({
   children,
-  variant = 'filled-primary',
+  variant = 'primary',
   size = 'base',
   text = 'Button',
   ...rest
