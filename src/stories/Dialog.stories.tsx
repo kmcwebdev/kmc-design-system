@@ -20,17 +20,17 @@ const Template: ComponentStory<typeof Dialog> = (args) => {
 
   return (
     <>
-      <Button variant="filled-primary" size="sm" onClick={() => setIsOpen(true)}>
+      <Button variant="primary" size="sm" onClick={() => setIsOpen(true)}>
         Show Dialog
       </Button>
       <Dialog {...args} open={isOpen}>
         <Dialog.Title title={`${args.width?.toUpperCase() as string} Dialog`} />
         <Dialog.Content>This is a {args.width as string} dialog content.</Dialog.Content>
         <Dialog.Footer className="flex justify-end">
-          <Button variant="outlined-danger" size="sm" onClick={() => setIsOpen(!isOpen)}>
+          <Button variant="danger" outlined size="sm" onClick={() => setIsOpen(!isOpen)}>
             Cancel
           </Button>
-          <Button variant="filled-primary" size="sm" onClick={() => setIsOpen(!isOpen)}>
+          <Button variant="primary" size="sm" onClick={() => setIsOpen(!isOpen)}>
             Proceed
           </Button>
         </Dialog.Footer>
