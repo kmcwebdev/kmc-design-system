@@ -1,7 +1,7 @@
 {
   "name": "kmc-design-system",
   "private": false,
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "type": "module",
   "files": [
     "dist"
@@ -21,7 +21,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "commit": "git-cz",
-    "semantic-release": "semantic-release --debug",
+    "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "vitest",
