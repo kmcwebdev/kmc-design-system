@@ -23,7 +23,7 @@ const Template: ComponentStory<typeof AlertDialog> = (args) => {
     <>
       <Button
         size="sm"
-        variant={args.variant === 'confirm' ? 'filled-primary' : `filled-${args.variant}`}
+        variant={args.variant === 'confirm' ? 'primary' : `${args.variant}`}
         onClick={() => setIsOpen(true)}
       >
         Show Alert Dialog
