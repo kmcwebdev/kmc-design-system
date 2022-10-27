@@ -56,7 +56,7 @@ const variantToTitleIconProps: Record<AlertDialogVariant, Omit<IDialogTitle, 'ti
 };
 
 const variantToCancelButtonProps: Record<AlertDialogVariant, ButtonProps> = {
-  confirm: { variant: 'outlined-primary' },
+  confirm: { variant: 'primary', outlined: true },
   info: { className: 'hidden' },
   warning: {
     className: 'hidden',
@@ -67,12 +67,12 @@ const variantToCancelButtonProps: Record<AlertDialogVariant, ButtonProps> = {
 };
 
 const variantToOkButtonProps: Record<AlertDialogVariant, ButtonProps> = {
-  confirm: { variant: 'filled-primary' },
-  info: { variant: 'filled-info' },
+  confirm: { variant: 'primary' },
+  info: { variant: 'info' },
   warning: {
-    variant: 'filled-warning',
+    variant: 'warning',
   },
   danger: {
-    variant: 'filled-danger',
+    variant: 'danger',
   },
 };
