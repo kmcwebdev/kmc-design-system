@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.2...v1.2.3) (2022-10-27)
+
+
+### Bug Fixes
+
+* **publish.yml:** added GA names ([0100360](https://github.com/kmcwebdev/kmc-design-system/commit/010036020466105070b04705db7838dc981f7ec5))
+
 ## [1.2.2](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.1...v1.2.2) (2022-10-27)
 
 
