@@ -41,19 +41,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-          token: ${{ SECRETS.SEMANTIC_RELEASE_TOKEN }}
-          ssh: ${{ SECRETS.SEMANTIC_SSH }}
           persist-credentials: false
       - name: Install Yarn
         run: yarn install
       - name: Build Project
         run: yarn build
-      - name: Configure Git
-        run: |
-          git config user.name "joelcabagua"
-          git config user.email "cabagua.joel@gmail.com"
       - name: Semantic release
         env:
           NPM_TOKEN: ${{ SECRETS.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
+          GIT_CREDENTIALS: 'joelcabagua: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'
         run: yarn semantic-release
