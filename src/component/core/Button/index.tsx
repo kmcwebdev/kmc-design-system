@@ -1,34 +1,29 @@
 import React from 'react';
 import { classNames } from '../../utils/classNames';
 
-export type ButtonVariant =
-  | 'filled-primary'
-  | 'filled-secondary'
-  | 'filled-success'
-  | 'filled-warning'
-  | 'filled-danger'
-  | 'filled-info'
-  | 'outlined-primary'
-  | 'outlined-secondary'
-  | 'outlined-success'
-  | 'outlined-warning'
-  | 'outlined-danger'
-  | 'outlined-info';
+export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';
 
 export interface ButtonProps
   extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: 'sm' | 'base';
+  outlined?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ children, variant = 'filled-primary', size = 'base', ...rest }) => {
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  variant = 'primary',
+  size = 'base',
+  outlined = false,
+  ...rest
+}) => {
   return (
     <button
       {...rest}
       data-testid="button"
       className={classNames(
-        'rounded outline-none shadow-sm-3 hover:shadow-sm-4 focus:shadow-sm-4 active:shadow-sm-1 transition-all duration-150 font-bold whitespace-nowrap px-6 self-end',
-        variantToClassName[variant],
+        'rounded outline-none shadow-sm-3 hover:shadow-sm-4 focus:shadow-sm-4 active:shadow-sm-1 transition-all duration-150 font-bold whitespace-nowrap px-6 self-end disabled:opacity-50',
+        buttonVariantToClass[`${outlined ? 'outlined' : 'filled'}-${variant}`],
         size === 'base' ? 'py-3' : 'py-2',
         rest.className && rest.className,
       )}
@@ -38,7 +33,7 @@ export const Button: React.FC<ButtonProps> = ({ children, variant = 'filled-prim
   );
 };
 
-const variantToClassName: Record<ButtonVariant, string> = {
+export const buttonVariantToClass: Record<string, string> = {
   'filled-primary':
     'bg-interactive-primary-neutral hover:bg-interactive-primary-hovered active:bg-interactive-primary-pressed text-white',
   'filled-secondary':
