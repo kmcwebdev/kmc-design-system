@@ -6,7 +6,7 @@ Please follow it in all your interactions with the project.
 
 ## Setting up Environment
 
-Install dependencies and adding husky hooks
+Install dependencies and adding husky hooks.
 
 > Delete first the `.husky folder`
 
