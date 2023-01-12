@@ -40,3 +40,6 @@ export type { ToastProps, ToastVariant } from './core/Toast';
 // Tabs
 export { Tabs } from './core/Tabs';
 export type { ITabProps, TabItem } from './core/Tabs';
+
+// Sidebar
+export {} from './core/Sidebar';
