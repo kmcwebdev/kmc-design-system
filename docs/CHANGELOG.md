@@ -1,3 +1,13 @@
+## [1.2.4](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.3...v1.2.4) (2023-01-12)
+
+
+### Bug Fixes
+
+* **config:** config ([c819e51](https://github.com/kmcwebdev/kmc-design-system/commit/c819e51e4e912e6238ba450500c1b4ef27dd3c8a))
+* **env:** added env ([b1cb624](https://github.com/kmcwebdev/kmc-design-system/commit/b1cb6245ba142943f91776d2ab682b9b14718e9c))
+* **publish.yml:** added github credentials ([728bcdd](https://github.com/kmcwebdev/kmc-design-system/commit/728bcdd059e038512d82064e6511a31459f2cdf6))
+* **readme:** test ([b2165c0](https://github.com/kmcwebdev/kmc-design-system/commit/b2165c005b88385fa44d2e0bad3e512ace0b83e6))
+
 ## [1.2.3](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.2...v1.2.3) (2022-10-27)
 
 
