@@ -6,7 +6,7 @@ import React from 'react';
 import { actions } from '@storybook/addon-actions';
 
 export default {
-  title: 'Core/Button/Filled',
+  title: 'Core/Button Filled',
   component: Button,
   argTypes: {
     outlined: {

@@ -5,7 +5,7 @@ import { Select } from '../component';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-  title: 'Core/Combobox/Filled',
+  title: 'Core/Combobox Filled',
   component: Select,
   argTypes: {},
 } as ComponentMeta<typeof Select>;

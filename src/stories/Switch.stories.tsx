@@ -11,7 +11,7 @@ export default {
 
 const Template: ComponentStory<typeof CoreSwitch> = (args) => <CoreSwitch {...args} />;
 
-export const Switch = Template.bind({});
-Switch.args = {
+export const Default = Template.bind({});
+Default.args = {
   size: 'base',
 };
