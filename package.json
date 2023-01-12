@@ -26,7 +26,8 @@
     "build-storybook": "build-storybook",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -99,6 +100,7 @@
     "react-select": ">=5.5.1"
   },
   "lint-staged": {
+    "**/*.ts?(x)": "yarn type-check",
     "*.{js,jsx,ts,tsx}": "eslint --fix",
     "*.{js,jsx,ts,tsx,json,css,js}": [
       "prettier --write"
