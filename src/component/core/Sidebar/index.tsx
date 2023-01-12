@@ -21,6 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <nav
+      data-testId="sidebar-navigation"
       className={classNames(
         'h-screen shadow-sm w-[88px]',
         theme === 'light' ? 'bg-white' : 'bg-branding-navy',
@@ -60,6 +61,7 @@ export interface SidebarItemProps extends Omit<React.LiHTMLAttributes<HTMLLIElem
 const Item: React.FC<SidebarItemProps> = ({ id, icon, children, activeNav, className, onChange, theme }) => {
   return (
     <li
+      data-testId={`sidebar-navigation-item-${id}`}
       className={classNames(
         'w-full rounded group border border-transparent transition-all active:scale-95 duration-100',
         activeNav === id && 'bg-branding-pumpkin hover:border-transparent',
