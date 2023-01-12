@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '../component';
 
 export default {
-  title: 'Core/Button/Outlined',
+  title: 'Core/Button Outlined',
   component: Button,
   argTypes: {
     outlined: {

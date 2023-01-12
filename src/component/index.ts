@@ -42,4 +42,5 @@ export { Tabs } from './core/Tabs';
 export type { ITabProps, TabItem } from './core/Tabs';
 
 // Sidebar
-export {} from './core/Sidebar';
+export { default as Sidebar } from './core/Sidebar';
+export type { SidebarProps, SidebarTheme } from './core/Sidebar';
