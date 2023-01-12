@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="h-screen w-screen text-center bg-gray-50">
+      <>KMC Design System</>
       <Sidebar className="w-[88px]" theme="dark" onChange={(e) => setActiveNav(e)} activeNav={activeNav}>
         <Sidebar.Item icon={<RectangleGroupIcon className="h-6 w-6" />} id="/dashboard">
           Dashboard
