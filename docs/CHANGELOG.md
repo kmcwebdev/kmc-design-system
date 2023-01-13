@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.4...v1.3.0) (2023-01-13)
+
+
+### Features
+
+* **sidenav:** added side navigation component ([ab690a0](https://github.com/kmcwebdev/kmc-design-system/commit/ab690a0bb20694dd66e3b2584c2fea33c7820734))
+
 ## [1.2.4](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.3...v1.2.4) (2023-01-12)
 
 
