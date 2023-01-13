@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/kmcwebdev/kmc-design-system/compare/v1.3.0...v1.3.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* removed unnecessary files ([d615f96](https://github.com/kmcwebdev/kmc-design-system/commit/d615f96b31bf3b8373ffcd2e9d1cf569af050833))
+
 # [1.3.0](https://github.com/kmcwebdev/kmc-design-system/compare/v1.2.4...v1.3.0) (2023-01-13)
 
 
