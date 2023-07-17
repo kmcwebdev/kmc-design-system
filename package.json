@@ -67,7 +67,7 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^9.1.0",
     "commitizen": "^4.2.5",
-    "eslint": "^8.26.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
